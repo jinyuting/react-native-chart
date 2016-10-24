@@ -88,7 +88,8 @@ export default class Chart extends Component<void, any, any> {
 
 		// Exit if we want tight bounds
 		if (this.props.tightBounds) {
-			return this.setState({ bounds: { min, max } });
+			// Yuting: set the 0 min and +5 max to fit the bounds
+			return this.setState({ bounds: { min: 0, max: max + 5 } });
 		}
 
 		max = getRoundNumber(max, this.props.verticalGridStep);
