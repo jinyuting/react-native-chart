@@ -6,7 +6,7 @@
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },
-  "main": "./dist/Chart.js",
+  "main": "./src/Chart.js",
   "dependencies": {
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.0.0",

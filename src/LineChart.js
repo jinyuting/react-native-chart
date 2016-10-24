@@ -42,6 +42,7 @@ export default class LineChart extends Component<void, any, any> {
 	}
 
 	_drawLine = () => {
+		console.log('line chart draw line properties', this.props);
 		const containerHeight = this.props.height;
 		const containerWidth = this.props.width;
 		const data = this.props.data || [];
